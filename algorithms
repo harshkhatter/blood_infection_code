@@ -1,0 +1,21 @@
+Pseudocode 
+
+Input: Blood Report 
+Output: Abstracted summary with infection and treatment
+
+Steps to perform:
+1. Perform pre-processing to convert input values as the readable values and re-duce 
+the dimensionality. 
+
+2. Extract the major features from the input values and match the input value with 
+respect to the ideal parameter range; and treat this as outcome (1).
+
+3. Use the fuzzy inference system rules on the outcome values (1). 
+
+4. Based on the scores and the ANFIS model, the prediction of the blood infection is 
+considered as outcome (2).
+
+5. Check the outcome (2) and apply the Neuro-fuzzy system to get the approapri-ate 
+treatment from experts database; this treatment string is considered as outcome (3).
+
+6. The obtained values (2) and (3) are shown to the users on interface as final out-put
