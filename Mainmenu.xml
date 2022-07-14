@@ -1,0 +1,21 @@
+<menu>
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_send"
+        android:icon="@mipmap/send"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/menu_send_label"
+        >
+    </item>
+    <item
+        android:id="@+id/action_reset"
+        android:icon="@mipmap/reset"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/menu_reset_label"
+        >
+    </item>
+
+</menu>.
