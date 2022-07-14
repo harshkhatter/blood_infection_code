@@ -1,0 +1,212 @@
+	
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/app_name"/>
+
+    </LinearLayout>-->
+
+                                                                                  
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name_label"
+            android:text="@string/name_label"
+            style="@style/info_label"
+            android:gravity="left"
+           />
+
+        <EditText
+            android:id="@+id/name_value"
+            android:hint="@string/name_value"
+            style="@style/info_value"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:maxLength="25"
+            android:maxEms="20"
+            android:inputType="textPersonName"
+            >
+        </EditText>
+
+        <TextView
+            android:id="@+id/age_label"
+            android:text="@string/age_label"
+            style="@style/info_label"
+            android:paddingLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/age_value"
+            android:hint="@string/age_value"
+            style="@style/info_value"
+            android:maxLength="3"
+            android:inputType="number"
+            >
+        </EditText>
+
+        <Spinner
+            android:id="@+id/gender_value"
+           
+                                                                             
+style="@style/info_label"
+            android:entries="@array/gender_label_array"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/hb_label"
+                style="@style/sample_label"
+                android:text="@string/hb_label"
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/hb_value"
+                android:hint="@string/hb_value"
+                style="@style/sample_value"
+                android:inputType="numberDecimal"
+                >
+            </EditText>
+            <TextView
+                android:id="@+id/rbc_label"
+                style="@style/sample_label"
+                android:text="@string/rbc_label"
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/rbc_value"
+                android:hint="@string/rbc_value"
+                style="@style/sample_value"
+                android:inputType="numberDecimal"
+                >
+            </EditText>
+            <TextView
+                                                                                             
+                android:id="@+id/pc_label"
+                style="@style/sample_label"
+                android:text="@string/pc_label"
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/pc_value"
+                android:hint="@string/pc_value"
+                style="@style/sample_value"
+                android:inputType="numberDecimal"
+                >
+            </EditText>
+            <TextView
+                android:id="@+id/hct_label"
+                style="@style/sample_label"
+                android:text="@string/hct_label"
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/hct_value"
+                android:hint="@string/hct_value"
+                style="@style/sample_value"
+                android:inputType="numberDecimal"
+                >
+            </EditText>
+            <TextView
+                android:id="@+id/mcv_label"
+                style="@style/sample_label"
+                android:text="@string/mcv_label"
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/mcv_value"
+                android:hint="@string/mcv_value"
+                style="@style/sample_value"
+                android:inputType="numberDecimal"
+                >
+            </EditText>
+            <TextView
+                android:id="@+id/mch_label"
+                style="@style/sample_label"
+                android:text="@string/mch_label"
+                >
+            </TextView>
+                                                                                     
+
+<EditText
+                android:id="@+id/mch_value"
+                android:hint="@string/mch_value"
+                style="@style/sample_value"
+                android:inputType="numberDecimal"
+                >
+            </EditText>
+            <TextView
+                android:id="@+id/mchc_label"
+                style="@style/sample_label"
+                android:text="@string/mchc_label"
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/mchc_value"
+                android:hint="@string/mchc_value"
+                style="@style/sample_value"
+                android:inputType="numberDecimal"
+                >
+            </EditText>
+            <TextView
+                android:id="@+id/rdw_cv_label"
+                style="@style/sample_label"
+                android:text="@string/rdw_cv_label"
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/rdw_cv_value"
+                android:hint="@string/rdw_cv_value"
+                style="@style/sample_value"
+                android:inputType="numberDecimal"
+                >
+            </EditText>
+            <TextView
+                android:id="@+id/blood_sugar_label"
+                style="@style/sample_label"
+                android:text="@string/blood_sugar_label"
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/blood_sugar_value"
+                android:hint="@string/blood_sugar_value"
+                style="@style/sample_value"
+                android:inputType="numberDecimal"
+                >
+                                                                                    
+</EditText>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
