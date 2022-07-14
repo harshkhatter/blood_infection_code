@@ -1,0 +1,41 @@
+Fuzzy Logic()
+Step1: if( (HB)=VERY_LOW & (RBC)=LOW & (PC)=NORMAL & (HCT)=VERY_LOW & (MCV)=HIGH & (MCH)=HIGH &   (MCHC)=NORMAL & (RDW_CV)=HIGH & (BS)=NORMAL).
+Result = "Problem: Folate Deficiency Anemia Vitamin(B12).
+Recommendation: Take Hydroxocobelamin (B12) injection.
+Expert = “Verified”
+Step 2: else if( (HB)=LOW & (RBC)=NORMAL & (PC)=NORMAL & (HCT)=LOW & (MCV)=NORMAL & (MCH)=NORMAL &  (MCHC)=NORMAL & (RDW_CV)=HIGH & (BS)=NORMAL).
+Result = Healthy. (No Disease)
+Expert = “Verified”  
+
+
+                                                                           
+Step 3: else if( (HB)=LOW & (RBC)=LOW & (PC)=NORMAL & (HCT)=LOW & (MCV)=VERY_LOW) & (MCH)=NORMAL) & (MCHC)=NORMAL & (RDW_CV)=NORMAL & (BS)=NORMAL).
+Result = Iron Deficiency.
+Recommendation: Take Iron supplements & make changes in diet. 
+Expert = “Verified”
+Step 4: else if( (HB)=LOW & (RBC)=LOW & (PC)=NORMAL & (HCT)=LOW & (MCV)=HIGH & (MCH)=NORMAL) & (MCHC)=NORMAL & (RDW_CV)=NORMAL & (BS)=NORMAL).
+Result =  Folate Deficiency Anemia Vitamin(B12).
+Recommendation: Take Hydroxocobelamin (B12) injection. 
+Expert = “Verified”
+Step 5: else if( (HB)=LOW & (RBC)=NORMAL & (PC)=NORMAL & (HCT)=VERY_LOW & (MCV)=LOW & (MCH)=NORMAL & (MCHC)=NORMAL & (RDW_CV)=NORMAL & (BS)=NORMAL).
+Result =  Anemia (Bleeding).
+Recommendation: Stop Bleeding.
+Expert = “Verified”
+Step 6: else if( (HB)=LOW & (RBC)=NORMAL & (PC)=NORMAL & (HCT)=LOW & (MCV)=NORMAL & (MCH)=NORMAL & (MCHC)=NORMAL & (RDW_CV)=NORMAL & (BS)=NORMAL).
+Result = Healthy. (No Disease)
+Expert = “Verified 
+Step 7: else if( (HB)=HIGH & (RBC)=HIGH & (PC)=NORMAL & (HCT)=HIGH & (MCV)=HIGH & (MCH)=NORMAL & (MCHC)=NORMAL & (RDW_CV)=NORMAL & (BS)=NORMAL).
+Result = Polycythemia (Blood Cancer).
+Recommendation: Chemotherapy.
+Expert = “Verified”
+Step 8: else if( (HB)=LOW & (RBC)=NORMAL & (PC)=NORMAL & (HCT)=NORMAL &(MCV)=LOW & (MCH)=LOW & (MCHC)=NORMAL & (RDW_CV)=NORMAL & (BS)=NORMAL).
+Result = Polycythemia (Blood Cancer).
+Recommendation: Chemotherapy. 
+Expert = “Verified”
+Step 9: else if( (HB)=NORMAL & (RBC)=NORMAL & (PC)=NORMAL & (HCT)=NORMAL & (MCV)=NORMAL & (MCH)=NORMAL & (MCHC)=NORMAL & (RDW_CV)=NORMAL & (BS)=NORMAL).
+Result= Healthy. (No Disease)
+Expert = “Verified” 
+Step 10: 0therwise
+Result= No Problems found in the database as per received inputs.
+Expert = “Not Verified”
+Step 11: Return result.
